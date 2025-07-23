@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "ba26abc8-32d7-4e55-b492-cee40f2a971a",
+		"name": "API-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46731979",
+		"_collection_link": "https://sandy-4156991.postman.co/workspace/Sandy's-Workspace~c8a4ff9f-cd7e-497c-8207-d3a7d35cf5fa/collection/46731979-ba26abc8-32d7-4e55-b492-cee40f2a971a?action=share&source=collection_link&creator=46731979"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bonjour",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/dire-bonjour?nom=Sandy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"dire-bonjour"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Sandy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addition",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"x\": 5, \"y\": 3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/addition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"addition"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
