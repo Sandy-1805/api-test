@@ -16,5 +16,5 @@ def dire_bonjour(nom: str = "inconnu"):
     return {"message": f"Bonjour {nom} !"}
 
 @app.post("/addition")
-def additionner(request: AdditionRequest):  # Utilise le modèle
+def additionner(request: AdditionRequest):
     return {"resultat": request.x + request.y}
